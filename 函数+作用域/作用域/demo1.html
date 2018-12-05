@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>作用域</title>
+</head>
+<body>
+	<script>
+		var aa="xxx";
+		function fn(){
+			var bb=123;
+			//函数内部变量可以访问函数外部变量
+			console.log(aa);
+		}
+		fn();
+		//函数外部变量不可以访问函数内的变量
+		console.log(bb);
+	</script>
+</body>
+</html>

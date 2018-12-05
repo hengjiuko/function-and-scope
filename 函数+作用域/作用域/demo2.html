@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>局部作用域覆盖全局作用域</title>
+</head>
+<body>
+	<script>
+		//全局变量
+		var aa=111;
+		function fn(){
+			//局部变量
+			var aa=123;
+            //函数内的局部变量可以覆盖函数同名的函数外的变量
+			console.log(aa);
+		}
+		fn();
+		
+	</script>
+</body>
+</html>

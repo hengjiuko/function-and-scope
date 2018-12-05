@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数局部变量</title>
+</head>
+<body>
+	<script>
+		var xx=123;
+		function fn(){
+			var bb=333;
+			//未用var声明是全局变量
+			cc="xxx";
+			console.log(xx);
+		}
+		fn();
+		//这个会报错，不能访问局部变量
+		console.log(bb);
+		//可以打印
+		console.log(cc);
+	</script>
+</body>
+</html>

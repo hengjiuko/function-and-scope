@@ -1,0 +1,10 @@
+<script type="text/javascript">
+	//函数可以作为其它函数的调用
+	function fn( _n ){
+		console.log( _n );
+		_n();
+	}
+	fn(function(){
+		console.log("abc");
+	})
+</script>

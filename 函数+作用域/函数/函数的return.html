@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数的return</title>
+</head>
+<body>
+	
+
+<script type="text/javascript">
+	function fn(n,m){
+       return n + m;/*return的值返回调用此函数的地方*/
+	}
+	console.log()
+	function fn2(n,m){
+		return n * m;
+	}
+	function fn3(a){
+		return a + fn(2,3) + ','+fn2(3,5);
+	}
+	var result=fn3("运算结果 ： ");
+	console.log(result);
+</script>
+</body>
+</html>

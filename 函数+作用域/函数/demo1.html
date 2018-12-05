@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件绑定</title>
+	<style type="text/css">
+		.txtWrap{
+			width:100px;
+			padding:10px;
+			background:#ddd;
+		}
+	</style>
+
+</head>
+<body>
+	<input type="button" value="按钮" id="btn"/>
+	<div class="txtWrap" id="txtWrap" ></div>
+	<script type="text/javascript">
+		var btn=document.getElementById("btn");
+		var txtWrap=document.getElementById("txtWrap");
+		var n=0;
+		btn.onclick=function(){
+			n++;
+			txtWrap.innerHTML='今天星期天<h3>'+n+'</h3>';
+		}
+	</script>
+</body>
+</html>
